@@ -1,0 +1,33 @@
+{
+  "name": "caint",
+  "version": "1.0.0",
+  "description": "A Wordle clone in Irish language called Caint.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "test": "jest",
+    "serve": "live-server public"
+  },
+  "dependencies": {
+    "core-js": "^3.30.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-loader": "^9.1.2",
+    "webpack": "^5.80.0",
+    "webpack-cli": "^5.0.2",
+    "webpack-dev-server": "^4.13.3",
+    "jest": "^29.5.0",
+    "live-server": "^1.2.2"
+  },
+  "keywords": [
+    "wordle",
+    "game",
+    "irish",
+    "caint"
+  ],
+  "author": "Your Name",
+    "license": "MIT"
+}

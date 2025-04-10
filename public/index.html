@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ga">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caint - Wordle Clone</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Caint</h1>
+        <h2>Caithfidh tú an focal ceart a thomhas i líon teoranta iarrachtaí.</h2>
+    </header>
+    <main id="game-container">
+        <section id="board-container">
+            <div id="board"></div>
+        </section>
+        <section id="message-container">
+            <div id="message"></div>
+        </section>
+        <section id="input-container">
+            <input 
+                type="text" 
+                id="guess-input" 
+                maxlength="7" 
+                placeholder="Cuir isteach do thomhas..." 
+                aria-label="Cuir isteach do thomhas"
+            >
+            <button id="submit-guess" aria-label="Cuir isteach an tomhas">Cuir isteach</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Caint. Déanta le grá don Ghaeilge.</p>
+    </footer>
+    <script src="dist/bundle.js"></script>
+</body>
+</html>
