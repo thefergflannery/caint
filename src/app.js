@@ -22,7 +22,12 @@ document.body.appendChild(scoreDisplay);
 // Add a dynamic header to display the word length
 const header = document.createElement('h2');
 header.id = 'word-length-header';
-document.body.insertBefore(header, board.parentElement);
+// Ensure board.parentElement is a child of document.body before inserting
+if (board.parentElement && document.body.contains(board.parentElement)) {
+    document.body.insertBefore(header, board.parentElement);
+} else {
+    document.body.appendChild(header);
+}
 
 // Add a button to provide hints
 const hintButton = document.createElement('button');
